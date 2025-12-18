@@ -1,0 +1,34 @@
+3.5) Opción 3: Eliminar ingrediente
+3.5.1) Qué debe suceder y por qué El sistema impide eliminar ingredientes que estén asociados a recetas, para evitar que una receta quede apuntando a un ingrediente inexistente. Si el ingrediente no está asociado, solicita confirmación explícita.
+Tabla de reglas de eliminación
+Caso
+Condición
+Resultado esperado
+No asociado
+El ingrediente no aparece en ninguna receta
+Permite eliminar con confirmación
+Asociado
+El ingrediente aparece al menos una vez en recetas
+Bloquea la eliminación
+Ejemplo de cómo se ve en pantalla (bloqueado):
+Eliminar ingrediente
+Ayuda rápida • El sistema no permite eliminar ingredientes que estén asociados a recetas. • Si el ingrediente no está asociado, se solicitará confirmación (s/n).
+Ingrese el ID del ingrediente a eliminar: 1 No se puede eliminar: el ingrediente está asociado a recetas. Asociaciones encontradas: 2
+
+-------------
+
+4.3.2) Por qué el sistema sugiere el precio Cuando un ingrediente está en kg y se usa en g, el precio por g se obtiene dividiendo el precio por kg entre 1000. Esto evita que el usuario tenga que hacer conversiones manuales y mantiene el cálculo alineado con la lógica de costos típica de cocina y hojas de cálculo.
+
+----------
+
+5.3) Opción 3: Ver detalle completo de una receta
+5.3.1) Qué debe mostrar Primero el resumen general de la receta y sus costos. Después una tabla de ingredientes asociados con subtotal por ingrediente.
+Tabla de detalle esperada en documento
+N
+ID ingrediente
+Ingrediente
+Cantidad
+Unidad
+Precio unitario
+Subtotal
+

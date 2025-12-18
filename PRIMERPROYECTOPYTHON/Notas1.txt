@@ -1,0 +1,231 @@
+Proyecto: Recetas ACME
+Proyecto_Python_Arce_Carolina_Borja_Daniel
+
+Objetivo: Desarrollar una herramienta para gestionar recetas, ingredientes y costos. 
+
+--- Gestion de Recetas
+CRUD de Recetas:
+C (create) - creacion de recetas
+                nombre de receta
+                categoria
+                numero porciones
+                descripcion
+            - creacion de ingredientes
+                nombre del ingrediente
+                cantidad total
+                unidad de medida
+                precio por unidad
+
+R (Read)- mostrar recetas
+          mostrar ingredientes
+U (Update) - actualizar recetas
+             actualizar ingredientes
+D (Delete) - eliminar recetas
+             eliminar ingredientes
+
+--- Gestion de Ingredientes
+La BD debe de estar conectada entre recetas: sumar la cantidad de ingredientes seleccionados de recetas,  permitiendo que se sume y reste la cantidad de ingredientes; y suma total pago.
+
+P - Se necesita error por posibilidad de ingredientes no disponibles 
+
+Se necesita tener una BD reutilizable: biblioteca o json donde se le pregunta al usuario: 
+
+1. cantidad de ingredientes a agregar
+2. ingredientes
+3. cantidad de ingrediente
+4. unidades de medida
+5. precio unitario por medida
+
+#revisar: puede que en el examen salga agregar costo de sueldos, servicios
+
+--- Calculo de costos
+Sistema calcula el costo total por receta y total universal
+Segun las porciones, costo por porcion
+Basado en los ingredientes seleccionados de la receta
+
+--- Lista y Consulta de Recetas
+Podrà visualizar listado de Recetas
+Preguntar filtracion por nombre o categoria
+ver todos los detalles de una receta especifica
+
+    nombre
+    categoria
+    breve descripcion
+    ingredientes
+    porciones
+
+    total costo
+    total de porcion
+
+--- Generacion lita de compras
+Mostrar la lista de recetas seleccionados
+lista de ingredientes necesarios
+
+    nombre de ingredientes
+    cantidad de ingrediente
+    unidad de medida
+    costo individual
+
+    costo universal
+
+-------------------------------------------------------------
+
+--- Viaje del usuario 
+
+Ingresa a la aplicacion
+Se le muestra un menu principal
+
+    Bienvenido, porfavor seleccione la opcion que desee
+    1. Menu de Ingredientes
+    2. Menu de Recetas
+    3. Lista de compras
+    0. Salir
+
+    Si selecciona 1: 
+
+        Bienvenido al Menu de Ingredientes
+        1. Ingresar nuevo ingrediente
+        2. Ver inventario
+        3. Actualizar información de ingrediente
+        4. Eliminar ingrediente
+        5. Volver a Menu Principal
+
+            Si selecciona 1: 
+
+            Ingresar nuevo Ingredientes
+            ¿Cuántos ingredientes quiere ingresar?
+
+                Porfavor ingrese la información necesaria
+                Nombre del ingrediente:
+                Cantidad total en el inventario:
+                Unidad de medida:
+                Precio por unidad de medida:
+
+            Si selecciona 2: 
+            
+            Bienvenido a lista de Ingredientes
+            Nombre:
+            Cantidad Total:
+            Unidad de Medida:
+            Precio por Unidad: 
+
+            <FINAL: MOSTRAR MENU INGREDIENTES>
+
+            Si selecciona 3: 
+
+            Actualizar Ingrediente
+            Porfavor ingrese el nombre del ingrediente a modificar:
+
+                Informacion de Ingrediente
+                Nombre:
+                Cantidad:
+                Unidad:
+                Precio:
+
+                ¿Qué información desea modificar?
+
+                Ingrese la información correcta:
+
+                Información guardada exitosamente!
+                Volviendo al Menú de Recetas
+                <FINAL: MOSTRAR MENU INGREDIENTES>
+
+            Si selecciona 4: 
+
+            Eliminar Ingrediente
+            Porfavor ingrese el nombre del ingrediente a eliminar:
+
+            Ingrediente eliminado exitosamente!
+            Volviendo al Menú de Ingredientes
+            <FINAL: MOSTRAR MENU INGREDIENTES>
+
+    Si selecciona 2:
+
+        Bienvenido al Menu de Recetas
+        1. Ingresar nueva receta
+        2. Ver categorias
+        3. Actualizar información de receta
+        4. Eliminar receta
+        5. Volver a Menu Principal
+
+            Si selecciona 1: 
+
+            Ingresar nueva Receta
+            ¿Cuántas Recetas quiere ingresar?
+
+                Porfavor ingrese la información necesaria:
+                Nombre de la receta:
+                Categoría de receta:
+                Numero de porciones:
+                Descripción de receta:
+                Precio final:
+
+                Se han guardado las recetas exitosamente!
+                Volviendo al Menú de Recetas
+                <FINAL: MOSTRAR MENU RECETAS>
+            
+            Si selecciona 2: 
+            
+            Bienvenido Categorias de Recetas
+
+                Porfavor  seleccione la categoria para visualizar: 
+
+                Entradas
+                Plato Fuerte
+                Pastas
+                Sopas
+                Ensaladas
+                Bebidas o Cocteles
+                Postres
+
+                    Bienvenido a CATEGORIA
+                    <MOSTRAR LISTA DE RECETAS>
+                    Nombre de la receta:
+                    Categoría de receta:
+                    Numero de porciones:
+                    Descripción de receta:
+                    Precio final:
+
+                    Volviendo al Menú de Recetas
+                    <FINAL: MOSTRAR MENU RECETAS>
+
+            Si selecciona 3: 
+
+            Actualizar Receta
+            Porfavor ingrese el nombre de la receta a modificar:
+
+            Informacion de Receta
+                Nombre:
+                Categoría:
+                Porciones:
+                Descripción:
+                Precio:
+
+                ¿Qué información desea modificar?
+
+                Ingrese la información correcta:
+
+                Receta modificada exitosamente!
+                Volviendo al Menú de Recetas
+                <FINAL: MOSTRAR MENU RECETAS>
+
+            Si selecciona 4: 
+
+            Eliminar Receta
+            Porfavor ingrese el nombre de la receta a eliminar:
+
+            ¿Está seguro que desea eliminar? s/n
+
+            Receta eliminada exitosamente!
+            Volviendo al Menú de Recetas
+            <FINAL: MOSTRAR MENU RECETAS>
+
+    Si selecciona 3: 
+
+    Bienvenido a Lista de compras
+
+    Recetas Seleccionadas: 
+    <Mostrar recetas>
+    
+    Lista de Ingredientes:
+    

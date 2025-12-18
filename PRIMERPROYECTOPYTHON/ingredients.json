@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "APPLES",
+        "cantidad": 5.0,
+        "unidad": "UNIT",
+        "precio": 50.0
+    },
+    {
+        "id": 2,
+        "nombre": "BEEF",
+        "cantidad": 50.0,
+        "unidad": "KG",
+        "precio": 200.0
+    }
+]

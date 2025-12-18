@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "nombre": "\tAPPLE AND BEEF STEW",
+        "categoria": "SOUP",
+        "porciones": 5,
+        "descripcion": "SLOW COOK, OLIVE OIL",
+        "ingredientes": [
+            {
+                "id_ingrediente": 1,
+                "nombre": "APPLES",
+                "cantidad": 2.0,
+                "unidad": "UNIT",
+                "precio": 50.0
+            },
+            {
+                "id_ingrediente": 2,
+                "nombre": "BEEF",
+                "cantidad": 1.0,
+                "unidad": "KG",
+                "precio": 200.0
+            }
+        ],
+        "costo_total": 300.0,
+        "costo_porcion": 60.0
+    }
+]
